@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Reply UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+<main role="main">
+  <div class="jumbotron container-fluid">
+    <div class="container">
+      <h1 class="display-3">Smart Replies Demo</h1>
+      <div class="card-body">
+        <div class="row pb-2">
+          <div class="col-md-12">
+            <h4>Send A Message </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input id="question" name="question2" type="search" class="form-control"
+                     placeholder="Type your message here">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <button id="myButton" type="submit" class="btn btn-primary btn-block">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container container-fluid">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="alert alert-success">
+          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #1</strong>
+          <hr class="message-inner-separator">
+          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
+          <p id="sr1"></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="alert alert-info">
+          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #2</strong>
+          <hr class="message-inner-separator">
+          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
+          <p id="sr2"></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="alert alert-info">
+          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #3</strong>
+          <hr class="message-inner-separator">
+          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
+          <p id="sr3"></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="alert alert-warning">
+          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #4</strong>
+          <hr class="message-inner-separator">
+          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
+          <p id="sr4"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+  $(document).ready(function () {
+    $("#myButton").on("click", function () {
+      var search = $("#question").val().replace('\'', '').replace(/[^a-zA-Z ]/g, " ").replace(/  +/g, ' ').toLowerCase();
+      $.ajax({
+        url: 'http://localhost:3005/smart_reply/search?search=' + search,
+        method: "GET",
+        dataType: "json"
+      }).done(function (resp) {
+        resp.map((reply, index) => {
+          $("#sr" + (index + 1)).html(reply);
+        });
+      });
+    });
+  });
+</script>
+</body>
+
+</html>
