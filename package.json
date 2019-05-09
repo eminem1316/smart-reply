@@ -1,0 +1,35 @@
+{
+    "name": "smart-reply",
+    "version": "1.0.0",
+    "description": "Mock web implementation of Google Smart Reply",
+    "main": "index.js",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.16.4",
+        "mongoose": "^5.5.6"
+    },
+    "scripts": {
+        "test": "node index",
+        "start": "noded index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/eminem1316/smart-reply.git"
+    },
+    "keywords": [
+        "google",
+        "smart",
+        "reply",
+        "smart",
+        "response",
+        "google",
+        "smart",
+        "reply"
+    ],
+    "author": "Johnson Sequeira",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/eminem1316/smart-reply/issues"
+    },
+    "homepage": "https://github.com/eminem1316/smart-reply#readme"
+}
