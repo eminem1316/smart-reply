@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b84a87-062b-4b1f-a7ff-2532a99975e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/smart-reply.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smart-reply.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,38 +17,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/vehicles.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/vitals.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1510">
-              <caret line="229" column="34" lean-forward="true" selection-start-line="229" selection-start-column="34" selection-end-line="229" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,6 +29,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>large moda</find>
+      <find>datatable</find>
+      <find>-responsive</find>
+      <find>datatable-buttons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,8 +46,12 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/db.json" />
-        <option value="/private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/vehicles.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="/private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/datatables.php" />
+        <option value="/private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/vehicles.php" />
+        <option value="/private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/custom 2.js" />
+        <option value="/private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/test.php" />
+        <option value="/private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/test2.php" />
       </list>
     </option>
   </component>
@@ -95,18 +71,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="smart-reply" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-reply" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,18 +122,18 @@
       <updated>1557410705783</updated>
       <workItem from="1557410707177" duration="2093000" />
       <workItem from="1557418799693" duration="7838000" />
-      <workItem from="1557469200783" duration="3391000" />
+      <workItem from="1557469200783" duration="5309000" />
+      <workItem from="1557645005803" duration="6298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13322000" />
+    <option name="totallyTimeSpent" value="21538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17381974" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17596567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -179,10 +145,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3299363" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -191,6 +157,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/eminem1316/smart-reply&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/eminem1316/smart-reply&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server.js" />
@@ -259,41 +229,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="34" selection-end-column="33" />
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/users.php" />
+    <entry file="file://$USER_HOME$/Downloads/general_elements.html" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="288">
+            <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/general_elements.html">
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/vitals.php" />
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="1035" column="118" lean-forward="true" selection-start-line="1035" selection-start-column="64" selection-end-line="1035" selection-end-column="118" />
+        <state relative-caret-position="236">
+          <caret line="71" column="62" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/vitals.php">
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/SpreadsheetReader_XLSX.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1510">
-          <caret line="229" column="34" lean-forward="true" selection-start-line="229" selection-start-column="34" selection-end-line="229" selection-end-column="34" />
+        <state relative-caret-position="459">
+          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/vaahanx_aws.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/test2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/custom 2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="2818" column="34" selection-start-line="2818" selection-start-column="34" selection-end-line="2818" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/vehicles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+          <folding>
+            <element signature="e#3#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///private/var/folders/zh/lxhvgt813jn9rwwdz8l_n4hr0000gq/T/fz3temp-2/datatables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

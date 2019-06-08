@@ -2,94 +2,132 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Smart Reply UI</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
+    <meta charset="UTF-8">
+    <title>Smart Reply UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .container-message {
+            border: 2px solid #dedede;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
 
-  </style>
+        .darker {
+            border-color: #ccc;
+            background-color: #ddd;
+        }
+
+        .container-message::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .container-message img {
+            float: left;
+            max-width: 60px;
+            width: 100%;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .container-message img.right {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+        .time-right {
+            float: right;
+            color: #aaa;
+        }
+
+        .time-left {
+            float: left;
+            color: #999;
+        }
+
+        .resp_buttons, .search-container {
+            margin-left: 2em;
+        }
+    </style>
 </head>
 <body>
 <main role="main">
-  <div class="jumbotron container-fluid">
-    <div class="container">
-      <h1 class="display-3">Smart Replies Demo</h1>
-      <div class="card-body">
-        <div class="row pb-2">
-          <div class="col-md-12">
-            <h4>Send A Message </h4>
-          </div>
+    <div class="jumbotron container-fluid">
+        <div class="container">
+            <h1 class="display-3">Smart Response Demo</h1>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input id="question" name="question2" type="search" class="form-control"
-                     placeholder="Type your message here">
+    </div>
+    <div class="container container-fluid chat-container">
+        <div class="container-message container darker">
+            <img src="https://pngimage.net/wp-content/uploads/2018/05/default-user-profile-image-png-2.png" alt="Avatar"
+                 class="right" style="width:100%;">
+            <p>Hi,</p>
+            <span class="time-left">11:05</span>
+        </div>
+        <div class="container-message">
+            <img src="https://png.pngtree.com/svg/20161027/631929649c.svg" alt="Avatar" style="width:100%;">
+            <p>Hello!</p>
+            <span class="time-right">11:00</span>
+        </div>
+
+
+    </div>
+    <div class="resp_buttons">
+        <button class="btn btn-default resp_button" id="resp1">No Suggestions</button>
+        <button class="btn btn-default resp_button" id="resp2">No Suggestions</button>
+        <button class="btn btn-default resp_button" id="resp3">No Suggestions</button>
+    </div>
+    <div class="container-message container search-container">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Type your message" name="question" id="question"/>
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="myButton">Send</button>
             </div>
-          </div>
-          <div class="col-md-6">
-            <button id="myButton" type="submit" class="btn btn-primary btn-block">Send</button>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="container container-fluid">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-3">
-        <div class="alert alert-success">
-          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #1</strong>
-          <hr class="message-inner-separator">
-          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
-          <p id="sr1"></p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="alert alert-info">
-          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #2</strong>
-          <hr class="message-inner-separator">
-          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
-          <p id="sr2"></p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="alert alert-info">
-          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #3</strong>
-          <hr class="message-inner-separator">
-          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
-          <p id="sr3"></p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="alert alert-warning">
-          <span class="glyphicon glyphicon-ok"></span> <strong>Suggested Reply #4</strong>
-          <hr class="message-inner-separator">
-          <i class="fa fa-spinner fa-spin" style="font-size: 24px; display: none;"></i>
-          <p id="sr4"></p>
-        </div>
-      </div>
-    </div>
-  </div>
 </main>
 <script>
-  $(document).ready(function () {
-    $("#myButton").on("click", function () {
-      var search = $("#question").val().replace('\'', '').replace(/[^a-zA-Z ]/g, " ").replace(/  +/g, ' ').toLowerCase();
-      $.ajax({
-        url: 'http://localhost:3005/smart_reply/search?search=' + search,
-        method: "GET",
-        dataType: "json"
-      }).done(function (resp) {
-        resp.map((reply, index) => {
-          $("#sr" + (index + 1)).html(reply);
-        });
-      });
-    });
-  });
+	$(document).ready(function () {
+		$(".resp_buttons").hide();
+		$("#myButton").on("click", function () {
+			$(".chat-container").append('<div class="container-message container darker">\n' +
+				'            <img src="https://pngimage.net/wp-content/uploads/2018/05/default-user-profile-image-png-2.png" alt="Avatar"\n' +
+				'                 class="right" style="width:100%;">\n' +
+				'            <p>' + $("#question").val() + '</p>\n' +
+				'            <span class="time-left">' + new Date().toLocaleTimeString() + '</span>\n' +
+				'        </div>');
+			var search = $("#question").val().replace('\'', '').replace(/[^a-zA-Z ]/g, " ").replace(/  +/g, ' ').toLowerCase();
+			$.ajax({
+				url: 'http://localhost:3005/smart_reply/search?search=' + search,
+				method: "GET",
+				dataType: "json"
+			}).done(function (resp) {
+				setTimeout(function () {
+					$(".resp_buttons").show();
+					resp.map((reply, index) => {
+						$("#resp" + (index + 1)).html(reply);
+					});
+				}, 600);
+			});
+			$("#question").val('');
+		});
+		$(".resp_button").click(function () {
+			var result = $(this).html();
+			$(".chat-container").append('<div class="container-message">\n' +
+				'            <img src="https://png.pngtree.com/svg/20161027/631929649c.svg" alt="Avatar" style="width:100%;">\n' +
+				'            <p>' + result + '</p>\n' +
+				'            <span class="time-right">' + new Date().toLocaleTimeString() + '</span>\n' +
+				'        </div>');
+			$(".resp_buttons").hide();
+		});
+	});
 </script>
 </body>
 
