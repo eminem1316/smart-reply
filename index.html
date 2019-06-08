@@ -105,7 +105,7 @@
 				'        </div>');
 			var search = $("#question").val().replace('\'', '').replace(/[^a-zA-Z ]/g, " ").replace(/  +/g, ' ').toLowerCase();
 			$.ajax({
-				url: 'http://localhost:3005/smart_reply/search?search=' + search,
+				url: 'http://ec2-3-14-8-38.us-east-2.compute.amazonaws.com:3005/smart_reply/search?search=' + search,
 				method: "GET",
 				dataType: "json"
 			}).done(function (resp) {
