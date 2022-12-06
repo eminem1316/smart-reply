@@ -4,8 +4,8 @@
     "description": "Mock web implementation of Google Smart Reply",
     "main": "index.js",
     "dependencies": {
-        "body-parser": "^1.19.0",
-        "express": "^4.16.4",
+        "body-parser": "^1.20.1",
+        "express": "^4.18.2",
         "mongoose": "^5.5.6"
     },
     "scripts": {
